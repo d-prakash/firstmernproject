@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll';
-import Logo from '../../assets/logo.svg'
+// import Logo from '../../assets/logo.svg'
 import { useState } from 'react';
 import {FaFacebookF,FaTwitter,FaInstagram,FaLinkedin} from 'react-icons/fa'
 import { FaBars, FaTimes } from 'react-icons/fa'
@@ -28,9 +28,9 @@ const Navbar = () => {
     <div className={navbar ? "navbarInActive" : "navbarActive"}>
     <div className="header" >
             <nav className='navbar'>
-                <Link to='home' className='app-logo'>
+                {/* <Link to='home' className='app-logo'>
                     <img src={Logo} alt='logo' />
-                </Link> 
+                </Link>  */}
                 
                 <div className='hamburger d-lg-none'  onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: 'black' }} />)
